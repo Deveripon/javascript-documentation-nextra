@@ -1,0 +1,10 @@
+{
+    "object": "JS Object",
+    "array": "JS Array",
+    "strings": "JS String",
+    "date": "JS Date",
+    "math": "JS Math",
+    "number": "JS Number",
+    "boolean": "JS Boolean"
+}
+

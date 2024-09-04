@@ -1,0 +1,23 @@
+{
+    "index": {
+        "title": "Javascript"
+    },
+    "basics": {
+        "title": "Javascript Basics"
+    },
+    "objects": {
+        "title": "Javascript Objects"
+    },
+    "bom": "Javascript BOM (Browser Object Model)",
+    "dom": "Javascript DOM (Document Object Model)",
+    "validation": "Javascript Validation",
+    "oop": "Javascript OOPs",
+    "cookies": "Javascript cookies",
+    "events": "Javascript Events",
+    "error-handling": "Javascript Error Handling",
+    "misc": "Javascript Miscellaneous",
+    "advanced": "Javascript Advanced",
+    "interview-questions": "interview Questions",
+    "gratitude": "Gratitude"
+}
+
