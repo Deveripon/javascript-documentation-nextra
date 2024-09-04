@@ -62,5 +62,18 @@ export default {
     sidebar: {
         defaultMenuCollapseLevel: 2,
     },
+    footer: {
+        text: (
+            <span>
+                copyright {new Date().getFullYear()} ©{" "}
+                <a
+                    href='https://github.com/deveripon'
+                    target='_blank'>
+                    devripon
+                </a>
+                .
+            </span>
+        ),
+    },
 };
 
