@@ -37,11 +37,11 @@ export default {
             />
             <meta
                 property='og:title'
-                content='Nextra'
+                content='NextDev.io'
             />
             <meta
                 property='og:description'
-                content='The next site builder'
+                content='A documentation platform for developers'
             />
         </>
     ),
@@ -54,7 +54,7 @@ export default {
                 🎉 follow my github →
             </a>
         ),
-        dismissible: false,
+        dismissible: true,
     },
     toc: {
         backToTop: true,
