@@ -1,0 +1,103 @@
+import { Callout } from "nextra/components";
+
+**Variables are Containers for Storing Data.**
+
+JavaScript Variables can be declared in 4 ways:
+
+-   Automatically
+-   Using `var`
+-   Using `let`
+-   Using `const`
+
+## Automatically
+
+in JavaScript variables can be set automatically without using any keyword. example:
+
+```javascript filename="index.js" showLineNumbers
+x = 5;
+y = 5;
+z = x + y;
+```
+
+abobe example `x , y ,z` are variables,which are automatically declared without using any keyword.
+
+<Callout type='warning' emoji={'💡'}>
+When to Use `var`, `let`, or `const`?
+1. Always declare variables before using them.
+
+2. Always use `const` if the value should not be changed
+
+3. Always use `const` if the type should not be changed (Arrays and Objects)
+
+4. Only use `let` where you can't use const.
+
+5. Only use `var` if you MUST support old browsers.
+
+</Callout>
+
+## var
+
+The var keyword was used in all JavaScript code from 1995 to 2015.
+
+in this example `x,y,z` is variables which are set with `var` keyword.
+
+```javascript filename="index.js" showLineNumbers
+var x = 5;
+var y = 5;
+var z = x + y;
+```
+
+## let
+
+in this example `x,y,z` is variables which are set with `let` keyword.
+
+```javascript filename="index.js" showLineNumbers
+let x = 5;
+let y = 5;
+let z = x + y;
+```
+
+<Callout type='info' emoji={'🚩'}>
+
+The `let` keyword was introduced in ES6 (2015)
+
+Variables declared with `let` have Block Scope
+
+Variables declared with `let` must be Declared before use
+
+Variables declared with `let` cannot be Redeclared in the same scope
+
+</Callout>
+
+### Cannot be Redeclare
+
+Variables defined with let can not be redeclared.
+
+You can not accidentally redeclare a variable declared with let.
+
+With let you can not do this:
+
+```javascript filename="index.js" showLineNumbers
+let x = "hello akash";
+let x = "hello tapash";
+//Syntax error : "x" has already been declared
+```
+
+## const
+
+<Callout type='warning' emoji={'💡'}>
+## JavaScript Identifiers
+ All JavaScript variables must be identified with unique names.
+
+These unique names are called identifiers.
+
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+The general rules for constructing names for variables (unique identifiers) are:
+
+Names can contain letters, digits, underscores, and dollar signs. Names must begin with a letter. Names can also begin with $ and \_ (but we will not use it in this tutorial). Names are case sensitive (y and Y are different variables). Reserved words (like JavaScript keywords) cannot be used as names.
+
+</Callout>
+
+## Types of variables
+
