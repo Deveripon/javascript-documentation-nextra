@@ -83,7 +83,91 @@ let x = "hello tapash";
 //Syntax error : "x" has already been declared
 ```
 
+### Scope
+
+<Callout type='info' emoji={'🚩'}>
+Before ES6 (2015), JavaScript did not have Block Scope.
+
+JavaScript had Global Scope and Function Scope.
+
+ES6 introduced the two new JavaScript keywords: `let` and `const`.
+
+These two keywords (`let` , `const`) provided Block Scope in JavaScript:
+
+</Callout>
+
+#### Function Scope
+
+In javascript, a function has its own local scope. which is called function scope.
+
+example:
+
+```js
+function foo() {
+    // this is the local scope of this function
+    let x = 5;
+}
+```
+
+inside a function declaration within `{ }` braces have its local scope. in function scoped variable cannot access outside of that function
+
+#### Block Scope
+
+```js
+{
+    // this is block scope
+    let foo = "bar";
+}
+```
+
+in javascript `{}` two curly brackets are known as a block. inside block declared any variable is blocked scoped variable. these variables can be access in that block.but can't access outside the block the block.
+
+#### Global Scope
+
+Variables declared with the `var` always have Global Scope. Variables declared with the `var` keyword can NOT have block scope.
+
 ## const
+
+in this example `domain` is variables which are set with `const` keyword. const are constant which is not changable.
+
+```javascript filename="index.js" showLineNumbers
+//constants are set with `const` keyword
+const domain = "example.com";
+```
+
+JavaScript const variables must be assigned a value when they are declared:
+
+```javascript filename="index.js" showLineNumbers
+const PI = 3.14159265359; // correct
+const PI; // Incorrect
+PI = 3.14159265359;
+
+```
+
+### When to use JavaScript const?
+
+Always declare a variable with const when you know that the value should not be changed.
+
+Use const when you declare:
+
+A new `Array`
+
+A new `Object`
+
+A new `Function`
+
+A new `RegExp`
+
+<Callout type='info' emoji={'🚩'}>
+The `const` keyword was introduced in ES6 (2015)
+
+Variables defined with `const` cannot be Redeclared
+
+Variables defined with `const` cannot be Reassigned
+
+Variables defined with `const` have Block Scope
+
+</Callout>
 
 <Callout type='warning' emoji={'💡'}>
 ## JavaScript Identifiers
@@ -98,6 +182,14 @@ The general rules for constructing names for variables (unique identifiers) are:
 Names can contain letters, digits, underscores, and dollar signs. Names must begin with a letter. Names can also begin with $ and \_ (but we will not use it in this tutorial). Names are case sensitive (y and Y are different variables). Reserved words (like JavaScript keywords) cannot be used as names.
 
 </Callout>
+
+## Difference Between var, let and const
+
+| keyword | Scope | Redeclare | Reassign | Hoisted | Binds this |
+| ------- | ----- | --------- | -------- | ------- | ---------- |
+| var     | No    | Yes       | Yes      | Yes     | Yes        |
+| let     | Yes   | No        | Yes      | No      | No         |
+| const   | Yes   | No        | No       | No      | No         |
 
 ## Types of variables
 
