@@ -1,0 +1,120 @@
+import { Callout } from "nextra/components";
+
+Conditional statements are used to perform different actions based on different conditions.
+
+## Conditional Statements
+
+Very often when you write code, you want to perform different actions for different decisions.
+
+You can use conditional statements in your code to do this.
+
+In JavaScript we have the following conditional statements:
+
+<Callout
+    type={"info"}
+    emoji={"🚩"}>
+    Use `if` to specify a block of code to be executed,
+
+    if a specified condition is true,
+
+    Use `else` to specify a block of code to be executed,
+
+    if the same condition is false Use `else if` to specify a new condition to test,if the first condition is false
+
+     Use `switch` to specify many alternative blocks of
+    code to be executed
+
+</Callout>
+**The switch statement is described in the next chapter.**
+
+### The if Statement
+
+Use the `if` statement to specify a block of JavaScript code to be executed if a condition is true.
+
+Syntax:
+
+```js
+if (condition) {
+    //  block of code to be executed if the condition is true
+}
+```
+
+<Callout
+    type={"warning"}
+    emoji={"💡"}>
+    Note that `if` is in lowercase letters. Uppercase letters (If or IF) will
+    generate a JavaScript error.
+</Callout>
+
+Example: Say "Good Morning" if the hour is less than 8
+
+```js showLineNumbers
+if (hour < 8) {
+    return "Good Morning";
+}
+```
+
+This code block will return "Good Morning"
+
+### The else Statement
+
+Use the `else` statement to specify a block of code to be executed if the condition is false.
+
+Syntax :
+
+```js showLineNumbers
+if (condition) {
+    //  block of code to be executed if the condition is true
+} else {
+    //  block of code to be executed if the condition is false
+}
+```
+
+Examples:
+
+Say "Good Morning" if the hour is less than 8 otherwise say" Good Noon"
+
+```js showLineNumbers
+if (hour < 8) {
+    return "Good Morning";
+} else {
+    return "Good Noon";
+}
+```
+
+This code block will return "Good Morning"
+
+### The else if Statement
+
+Use the else if statement to specify a new condition if the first condition is false.
+
+Syntax:
+
+```js showLineNumbers
+if (condition1) {
+    // block of code to be executed if condition1 is true
+} else if (condition2) {
+    // block of code to be executed if condition2 is true
+} else {
+    // block of code to be executed if both condition is false
+}
+```
+
+Examples:
+
+-   If the waiting time is less then 1 hour than say "okay no problem"
+
+-   else if the waiting time is grater than 1 hour say "Feeling Bored"
+
+-   else say "Feeling angry"
+
+```js showLineNumbers
+if (time < 1) {
+    return "Okay no problem";
+} else if (time > 1) {
+    return "Feeling Bored";
+} else {
+    return "Feeling angry";
+}
+```
+
