@@ -1,0 +1,51 @@
+import { Callout } from "nextra/components";
+
+The `for...in` loop in JavaScript is used to iterate over the enumerable properties of an object. It allows you to loop through the keys (property names) of an object. Unlike the standard for loop, which runs for a set number of iterations, the for...in loop operates on an object's properties.
+
+## Syntax of the for...in Loop:
+
+```javascript copy showLineNumbers /key/ /object/
+for (let key in object) {
+    // code to be executed
+}
+```
+
+-   `key` is a variable that holds the current property name (or key) during each iteration.
+-   `object` is the object whose properties are being iterated over.
+
+Example: Basic `for...in` Loop
+
+```javascript copy showLineNumbers
+const person = {
+    name: "Alice",
+    age: 30,
+    profession: "Engineer",
+};
+
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
+```
+
+Output:
+
+```json
+name: Alice
+age: 30
+profession: Engineer
+
+```
+
+Here, the `for...in` loop goes through each property of the `person` object:
+
+-   On the first iteration, `key` is "`name`", and `person[key]` (i.e., `person["name"]`) is "`Alice`".
+-   On the second iteration, `key` is "`age`", and `person["age"]` is `30`.
+-   On the third iteration, `key` is "`profession`", and `person["profession"]` is "`Engineer`".
+
+<Callout
+    type='warning'
+    emoji='💡'>
+    Best Practices: Use `for...in` with objects when you need to access keys and
+    values.
+</Callout>
+

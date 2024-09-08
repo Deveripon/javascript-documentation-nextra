@@ -8,7 +8,12 @@
         <title>Document</title>
     </head>
     <body>
-        <script src=""></script>
+        <script>
+            const fruits = ["apple", "banana", "orange", "pineapple"];
+            fruits.forEach((fruit, index, fruits) => {
+                console.log(fruit + "," + index + "," + fruits);
+            });
+        </script>
     </body>
 </html>
 

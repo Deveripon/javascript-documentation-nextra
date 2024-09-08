@@ -1,0 +1,46 @@
+import { Callout } from "nextra/components";
+
+The `for...of` loop in JavaScript is used to iterate over iterable objects such as `arrays`, `strings`, `sets`, `maps`, and more. Unlike the `for...in` loop, which iterates over an object's keys (property names), the `for...of` loop iterates over the values of an iterable object.
+
+## Syntax of the `for...of` Loop:
+
+```javascript copy showLineNumbers /value/ /iterable/
+for (let value in iterable) {
+    // code to be executed
+}
+```
+
+-   `value` is the current value of the iterable object being accessed.
+-   `iterable` is any object that can be iterated over (e.g., an `array`, `string`, `set`, or `map`).
+
+Example: Using for...of with an Array
+
+```javascript copy showLineNumbers
+const fruits = ["Apple", "Banana", "Cherry"];
+
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+```
+
+Output:
+
+```json
+Apple
+Banana
+Cherry
+```
+
+Here, the `for...of` loop iterates through the `fruits` array:
+
+-   On the first iteration, `fruit` is "`Apple`".
+-   On the second iteration, `fruit` is "`Banana`".
+-   On the third iteration, `fruit` is "`Cherry`".
+
+<Callout
+    type='warning'
+    emoji='💡'>
+    Best Practices: Use `for...of` for iterating over `arrays`, `strings`,
+    `sets`, `maps`, and other iterables.
+</Callout>
+

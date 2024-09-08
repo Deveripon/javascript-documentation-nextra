@@ -1,0 +1,41 @@
+The `map() `method in JavaScript is used to create a new `array` by applying a function to each element of an existing `array`. It’s particularly useful when you need to transform the elements of an array without modifying the original `array`.
+
+## Syntax of map():
+
+```js showLineNumbers
+let newArray = array.map((element, index, array) => {
+    // Code to execute on each element
+    return newValue; // New transformed value to store in the new array
+});
+```
+
+-   `element`: The current element being processed in the `array`.
+-   `index` (optional): The index of the current element being processed.
+-   `array` (optional): The `array` `map()` was called upon.
+-   `Returns`: A new `array` with the transformed values.
+
+Example: Basic Usage of `map()`
+
+```js showLineNumbers
+const numbers = [1, 2, 3, 4, 5];
+
+const doubled = numbers.map(function (number) {
+    return number * 2;
+});
+
+console.log(doubled); // Output: [2, 4, 6, 8, 10]
+console.log(numbers); // Output: [1, 2, 3, 4, 5] (original array remains unchanged)
+```
+
+In this example:
+
+-   The `map()` method loops through the `numbers` `array`.
+-   Each number is multiplied by `2`, and the result is stored in the new `array` `doubled`.
+-   The original `numbers` `array` remains unmodified.
+
+How `map()` Works:
+
+-   `Original Array`: The original array remains intact.
+-   `Transformation`: Each element is transformed by the provided callback function.
+-   `New Array`: A new array with the transformed values is returned.
+

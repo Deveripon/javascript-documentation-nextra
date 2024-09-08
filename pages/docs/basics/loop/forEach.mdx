@@ -1,0 +1,43 @@
+The `forEach()` loop in JavaScript is a built-in array method that allows you to execute a provided function once for each element in an array. It's a simpler and more readable alternative to traditional for loops when you want to iterate over an array and perform some action on each element.
+
+**Key Points:**
+
+-   Used for `arrays`: `forEach()` is specifically designed for `arrays` and cannot be used directly on `objects`.
+-   Does not return a `value`: `Unlike map()`, which creates a new `array`,
+-   `forEach()` performs actions on the elements without returning anything.
+-   Callback function: The function you provide to `forEach()` gets executed for every element in the `array`.
+
+## Syntax of forEach():
+
+```javascript copy showLineNumbers /element/ /index/ /array/
+array.forEach((element, index, array) => {
+    // Code to execute on each element
+});
+```
+
+-   `element`: The current element being processed in the array.
+-   `index` (optional): The index of the current element being processed.
+-   `array` (optional): The array forEach() was called upon.
+
+Example: Basic `forEach()` Loop
+
+```javascript copy showLineNumbers
+const fruits = ["apple", "orange", "banana"];
+fruits.forEach((fruit, index) => {
+    console.log(fruit);
+});
+```
+
+Output:
+
+```json
+apple
+orange
+banana
+```
+
+In this example:
+
+-   The `forEach()` loop iterates over the `fruits` array.
+-   The function is called for each element, printing the name of the `fruit`.
+

@@ -1,0 +1,34 @@
+import { Callout } from "nextra/components";
+
+The `do...while` loop is a variant of the `while` loop. The key difference is that the code inside the `do block` is executed at least once, even if the condition is `false` from the start. The condition is checked after the first iteration.
+
+## Syntax of the `do...while` Loop:
+
+```javascript copy showLineNumbers /condition/
+do {
+    // code to be executed
+} while (condition);
+```
+
+Example: Basic `do...while` Loop
+
+```js copy showLineNumbers
+let count = 0;
+do {
+    console.log("hello world");
+    count++;
+} while (count > 5);
+```
+
+In this case:
+
+-   The loop runs once even if the condition is false.
+-   After the first run, the condition is checked.
+
+<Callout
+    type='warning'
+    emoji='💡'>
+    In the `do...while` loop, the code block is executed at least once, even
+    though the condition is false.
+</Callout>
+

@@ -1,0 +1,40 @@
+The `while` loop in JavaScript is a control flow statement that allows code to be executed repeatedly based on a given `Boolean` condition. The loop continues to execute as long as the condition evaluates to `true`. Once the condition evaluates to false, the loop stops.
+
+## Syntax of the while Loop:
+
+```javascript copy showLineNumbers /condition/
+while (condition) {
+    // code to be executed
+}
+```
+
+-   `condition`: This is a Boolean expression (`true` or `false`). The loop keeps executing as long as this condition is `true`.
+-   The code inside the loop executes repeatedly until the condition becomes `false`.
+
+Example: Basic `while` Loop
+
+```javascript copy showLineNumbers
+let count = 0;
+
+while (count < 5) {
+    console.log(count);
+    count++;
+}
+```
+
+Output:
+
+```json
+0
+1
+2
+3
+4
+```
+
+In this example:
+
+-   The loop runs as long as `count` is less than `5`.
+-   After each iteration, the value of `count` is increased by `1` (`count++`).
+-   The loop stops when `count` becomes `5` because the condition (`count < 5`) becomes `false`.
+
