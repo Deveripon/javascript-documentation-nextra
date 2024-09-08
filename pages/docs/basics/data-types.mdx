@@ -33,6 +33,66 @@ Primitive means a simple value.it can be anything. there are 5 types of primitiv
 | Undefined | represents undefined value                     |
 | Null      | represents null i.e. no value at all           |
 
+### String
+
+Any Text value is represented as a string type. like "hello world" Strings are written with quotes. You can use single or double quotes:
+
+Example:
+
+```js
+// Using double quotes:
+let carName1 = "Volvo XC60";
+
+// Using single quotes:
+let carName2 = "Volvo XC60";
+```
+
+### Number
+
+All JavaScript numbers are stored as decimal numbers (floating point). Numbers can be written with, or without decimals:
+
+Example:
+
+```js
+// With decimals:
+let x1 = 34.0;
+
+// Without decimals:
+let x2 = 34;
+```
+
+### Boolean
+
+Booleans can only have two values: `true` or `false`. Booleans are often used in conditional testing. Example:
+
+```js
+let x = 5;
+let y = 5;
+let z = 6;
+(x == y)(
+    // Returns true
+    x == z
+); // Returns false
+```
+
+### Undefined
+
+In JavaScript, a variable without a value, has the value undefined. The type is also undefined. Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+
+Example:
+
+```js
+let car; // Value is undefined, type is undefined
+```
+
+### Null
+
+null means that the value is null, value is defined but its null. null value can be changed. Example:
+
+```js
+let cash = null; // Value is null, type is object
+```
+
 ### JavaScript non-primitive data types
 
 The non-primitive data types are as follows:
@@ -42,4 +102,43 @@ The non-primitive data types are as follows:
 | Object    | represents instance through which we can access members |
 | Array     | represents group of similar values                      |
 | RegExp    | represents regular expression                           |
+
+### Object
+
+JavaScript objects are written with curly braces {}.
+
+Object properties are written as name:value pairs, separated by commas.
+
+Example:
+
+```js
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue",
+};
+```
+
+The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.
+
+### Array
+
+JavaScript Arrays JavaScript arrays are written with square brackets.
+
+Array items are separated by commas.
+
+The following code declares (creates) an array called `cars`, containing three items (car names): Example
+
+```js
+const cars = ["Saab", "Volvo", "BMW"];
+```
+
+### RegExp(Reguler Expression)
+
+A regular expression is a sequence of characters that forms a search pattern.
+
+The search pattern can be used for text search and text replace operations.
+
+**we will know abour RegExp later**
 
