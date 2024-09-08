@@ -1,0 +1,11 @@
+{
+    "index": {
+        "display": "hidden"
+    },
+    "for": "For",
+    "for-in": "For In",
+    "for-of": "For Of",
+    "while": "While",
+    "do-while": "Do While"
+}
+
