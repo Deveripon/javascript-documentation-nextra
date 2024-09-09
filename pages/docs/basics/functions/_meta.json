@@ -1,0 +1,18 @@
+{
+    "index": {
+        "title": "Introduction of Functions"
+    },
+    "function-declaration": "Function Declaration",
+    "function-expression": "Function Expression",
+    "arrow-function": "Arrow Function",
+    "constractor-function": "Function Constractor",
+    "callback-function": "Function Callback",
+    "closour-function": "Function Closour",
+    "higher-order-function": "Higher Order Function",
+    "curring": "Curring",
+    "IIFE": "IIFE",
+    "call": "Call()",
+    "apply": "Apply()",
+    "bind": "Bind()"
+}
+

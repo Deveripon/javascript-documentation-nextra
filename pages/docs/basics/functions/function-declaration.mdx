@@ -1,0 +1,25 @@
+import { Callout } from "nextra/components";
+
+## Declare a function
+
+**`Function declarations` are primarily used to create a function. this type of functions are hoisted (we will know about hoisting later) to window object. that's why you can able to `invoke` (call a function) a function before the function define.**
+
+Syntax:
+
+```js
+// this is function definition / or function body
+function myFunction() {
+    console.log("Hello World");
+}
+
+//invoke myFunction to get output
+myFunction();
+// Output : Hello World
+```
+
+<Callout
+    type='warning'
+    emoji='💡'>
+    You can invoke the function before define in this declaration type function
+</Callout>
+

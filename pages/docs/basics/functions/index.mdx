@@ -1,0 +1,192 @@
+import { Callout } from "nextra/components";
+
+**A JavaScript function is a block of code designed to perform a particular task.**
+
+A JavaScript function is executed when "something" invokes it (calls it).
+
+Example:
+
+```js filename="function.js" showLineNumbers copy
+//this is a function declaration. and it will be executed when it invokes
+function doSum(val1, val2) {
+    return val1 + val2;
+}
+```
+
+## JavaScript Function Syntax
+
+A JavaScript function is defined with the `function` keyword, followed by a `name`, followed by `parentheses ()`,followed by `curly brackets{}`.
+
+Function names can contain `letters`, `digits`, `underscores`, and `dollar` signs (same rules as variables).
+
+The `parentheses()` may include `parameter` names separated by commas: e.g:(parameter1, parameter2, ...)
+
+The code to be executed, by the function, is placed inside `curly brackets: {}`
+
+```js showLineNumbers copy
+function name(parameter1, parameter2, parameter3) {
+    // code to be executed
+}
+```
+
+Function `parameters` are listed inside the `parentheses ()` in the function definition.
+
+Function `arguments` are the values received by the function when it is invoked.
+
+Inside the function, the `arguments` (the parameters) behave as local variables.
+
+## Why Functions?
+
+With functions you can reuse code.
+
+You can write code that can be used many times.
+
+You can use the same code with different arguments, to produce different results.
+
+## Function Defination
+
+JavaScript functions are defined with the `function` keyword.
+
+You can use a `function declaration` or a `function expression`. Earlier in this tutorial, you learned that functions are declared with the following syntax:
+
+```js
+function functionName(parameters) {
+    // code to be executed
+}
+```
+
+Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are `invoked` (called upon).
+
+## Function Parameters and Arguments
+
+Earlier in this tutorial, you learned that functions can have parameters:
+
+```js
+function functionName(parameter1, parameter2, parameter3) {
+    // code to be executed
+}
+```
+
+Function parameters are the names listed in the function definition.
+
+Function arguments are the real values passed to (and received by) the function.
+
+### Parameter Rules
+
+-   JavaScript function definitions do not specify data types for parameters.
+
+-   JavaScript functions do not perform type checking on the passed arguments.
+
+-   JavaScript functions do not check the number of arguments received.
+
+### Default Parameters
+
+If a function is called with missing arguments, the missing values are set to undefined.
+
+Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter.
+
+Example:
+
+```js
+//If y is not passed or undefined, then y = 10.
+
+function myFunction(x, y = 10) {
+    return x + y;
+}
+myFunction(5);
+```
+
+### Function Rest Parameter
+
+Sometimes you will not know that how much parameters will pass in invocation times. In that case you cant receive parameters in a normal way. In this situation you can use `...rest` parameters to receive all the parameters as an array.
+
+Example:
+
+```js showLineNumbers copy
+function doSum(...rest) {
+    let sum = 0;
+    for (let item of rest) sum += item;
+    return sum;
+}
+doSum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
+
+//Output : 91 ;
+```
+
+in above example the `doSum() `function will perform `sum` of given numbers. but no one knows that how much number will come as arguments. so this is not possible to define `parameter`. so in this situation you can use `...rest` parameter to receive all the arguments.
+
+### The Arguments Object
+
+JavaScript functions have a `built-in object` called the `arguments` object.
+
+The `argument` object contains an array of the arguments used when the function was called (invoked).
+
+This way you can simply use a `function` to find (for instance) the highest value in a list of numbers:
+
+```js
+x = sumAll(1, 123, 500, 115, 44, 88);
+
+function sumAll() {
+    let sum = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+}
+```
+
+<Callout type="warning" emoji="💡">
+ Arguments are Passed by `Value`
+
+The parameters, in a function call, are the function's arguments.
+
+JavaScript arguments are passed by `value`: The function only gets to know the values, not the argument's locations.
+
+If a function changes an argument's value, it does not change the parameter's original value.
+
+**Changes to `arguments` are not visible (reflected) outside the function.**
+
+</Callout>
+
+<Callout type="warning" emoji="💡">
+Objects are Passed by `Reference`
+
+In JavaScript, object references are values.
+
+Because of this, objects will behave like they are passed by reference:
+
+If a function changes an object property, it changes the original value.
+
+**Changes to object properties are visible (reflected) outside the function.**
+
+</Callout>
+
+## Function Invocation
+
+The code inside a function is not executed when the function is defined.
+
+The code inside a function is executed when the function is invoked.
+
+It is common to use the term "call a function" instead of "invoke a function".
+
+It is also common to say "call upon a function", "start a function", or "execute a function".
+
+```js showLineNumbers {1-5,8}
+//== function defination start ==//
+function myFunction(a, b) {
+    return a * b;
+}
+//== function defination end ==//
+
+//== function Invocation ==//
+myFunction(10, 2); // Will return 20
+```
+
+in above example `line number 1 to 5 is function defination`,and it will not execute the written code inside the function untill the function is invoked.
+
+`in line number 8, the function is invoked`. and the function will executed here.
+
+## Various Types of Function Syntax and Rules:
+
+You will know about various types of function Syntax and its rules in next following chapters. [Next Chapter](/docs/basics/functions/function-declaration)
+

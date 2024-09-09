@@ -9,10 +9,12 @@
     </head>
     <body>
         <script>
-            const fruits = ["apple", "banana", "orange", "pineapple"];
-            fruits.forEach((fruit, index, fruits) => {
-                console.log(fruit + "," + index + "," + fruits);
-            });
+            function doSum(...rest) {
+                let sum = 0;
+                for (let item of rest) sum += item;
+                return sum;
+            }
+            console.log(doSum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13));
         </script>
     </body>
 </html>
